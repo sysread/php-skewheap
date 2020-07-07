@@ -1,4 +1,6 @@
-# NAME - SkewHeap
+# NAME
+
+SkewHeap - mergable priority queues
 
 # SYNOPSIS
 
