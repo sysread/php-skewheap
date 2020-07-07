@@ -1,5 +1,16 @@
 {
-  "require-dev": {
-    "phpunit/phpunit": "^9"
-  }
+    "name": "sysread/php-skewheap",
+    "description": "mergable priority queues",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^9.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeff Ober",
+            "email": "sysread@fastmail.fm"
+        }
+    ],
+    "require": {}
 }
