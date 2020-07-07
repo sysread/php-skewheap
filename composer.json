@@ -1,22 +1,21 @@
 {
     "name": "sysread/php-skewheap",
     "description": "mergable priority queues",
-    "type": "library",
+    "keywords" : ["heap", "skew-heap", "priority", "queue"],
+    "homepage" : "https://github.com/sysread/php-skewheap",
     "license": "MIT",
-
     "authors": [
         {
             "name": "Jeff Ober",
             "email": "sysread@fastmail.fm"
         }
     ],
-
-    "prefer-stable": true,
-    "minimum-stability": "dev",
-
     "require-dev": {
         "phpunit/phpunit": "^9.2"
     },
-
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "sysread\\SkewHeap\\": "src"
+        }
+    }
 }
