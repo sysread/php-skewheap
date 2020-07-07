@@ -3,8 +3,7 @@
 /**
  *
  * @author Jeff Ober <sysread@fastmail.fm>
- * @version 1.0
- * @copyright 2002 Jeff Ober
+ * @copyright 2020 Jeff Ober
  * @license MIT
  *
  */
