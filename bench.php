@@ -1,6 +1,7 @@
 <?php
 
-require("src/SkewHeap.php");
+require __DIR__ . "/src/SkewHeap.php";
+use sysread\SkewHeap\SkewHeap;
 
 function D($n) {
   return number_format($n, 0, '.', '_');
