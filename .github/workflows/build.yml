@@ -14,7 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: php-actions/composer@v1
-        run: phpunit ./tests
+      - name: Run tests
+        run: ./vendor/bin/phpunit ./tests
 
   benchmarks:
     runs-on: ubuntu-latest
@@ -22,4 +23,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: php-actions/composer@v1
-      - run: php ./bench.php 10000 50000 100000 500000 1000000
+      - name: Run benchmarks
+        run: php ./bench.php 10000 50000 100000 500000 1000000
