@@ -74,6 +74,10 @@ empty.
 
 Removes and returns an array of all items in the queue.
 
+### explain()
+
+Prints out a visual explanation of the heap structure for debugging.
+
 ## AUTHOR
 
 Jeff Ober <sysread@fastmail.fm>

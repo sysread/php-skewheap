@@ -10,6 +10,12 @@
 
 namespace sysread\SkewHeap;
 
+function _indent($level=0) {
+  for ($i = 0; $i < $level; ++$i) {
+    echo "  ";
+  }
+}
+
 class Node {
   public $key;
   public $left;
@@ -19,6 +25,19 @@ class Node {
     $this->key   = $key;
     $this->left  = $left;
     $this->right = $right;
+  }
+
+  function explain($label='Root', $indent=0) {
+    _indent($indent);
+    printf("$label: %s\n", $this->key);
+
+    if ($this->left) {
+      $this->left->explain('Left', $indent + 1);
+    }
+
+    if ($this->right) {
+      $this->right->explain('Right', $indent + 1);
+    }
   }
 }
 
@@ -144,6 +163,22 @@ class SkewHeap implements \Iterator {
     }
 
     return $items;
+  }
+
+  /**
+   * Prints out a visual explanation of the heap structure for debugging.
+   *
+   * @return void
+   */
+  public function explain() {
+    printf("SkewHeap <size=%d>\n", $this->size);
+
+    if ($this->root) {
+      $this->root->explain();
+    } else {
+      _indent(1);
+      printf("Empty");
+    }
   }
 
   private function merge($a, $b) {
