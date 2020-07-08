@@ -1,6 +1,6 @@
 <?php
 
-require("src/SkewHeap.php");
+require __DIR__ . "src/SkewHeap.php";
 
 use PHPUnit\Framework\TestCase;
 

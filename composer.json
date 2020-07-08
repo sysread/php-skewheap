@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "sysread\\SkewHeap\\": "src"
+            "sysread\\SkewHeap\\": "src/"
         }
     }
 }
