@@ -1,3 +1,5 @@
+![build](https://github.com/sysread/php-skewheap/workflows/build/badge.svg)
+
 # NAME
 
 SkewHeap - mergable priority queues
