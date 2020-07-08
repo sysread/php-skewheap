@@ -24,4 +24,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: php-actions/composer@v1
       - name: Run benchmarks
-        run: php ./bench.php 10000 50000 100000 500000 1000000
+        run: php ./bench.php 5000 10000 50000 100000
