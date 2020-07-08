@@ -2,11 +2,13 @@
 
 /**
  *
- * @author Jeff Ober <sysread@fastmail.fm>
+ * @author    Jeff Ober <sysread@fastmail.fm>
  * @copyright 2020 Jeff Ober
- * @license MIT
+ * @license   MIT
  *
  */
+
+namespace sysread\SkewHeap;
 
 class Node {
   public $key;
@@ -24,7 +26,7 @@ class Node {
  * A skew heaps are light-weight priority queues notable for their ability to
  * be quickly merged with other heaps.
  */
-class SkewHeap implements Iterator {
+class SkewHeap implements \Iterator {
   private $size = 0;
   private $root = null;
   private $cmp;

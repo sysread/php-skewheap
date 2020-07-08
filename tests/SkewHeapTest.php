@@ -1,8 +1,9 @@
 <?php
 
-require __DIR__ . "src/SkewHeap.php";
+require __DIR__ . "/../src/SkewHeap.php";
 
 use PHPUnit\Framework\TestCase;
+use sysread\SkewHeap\SkewHeap;
 
 class SkewHeapTest extends TestCase {
   public function testInitialState() {

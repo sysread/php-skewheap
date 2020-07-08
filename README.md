@@ -4,6 +4,8 @@ SkewHeap - mergable priority queues
 
 # SYNOPSIS
 
+    use sysread\SkewHeap\SkewHeap;
+
     $heap = new SkewHeap;
 
     foreach ($tasks as $task) {
